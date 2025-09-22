@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom button styles */
+@layer components {
+  .calc-btn {
+    @apply h-14 rounded-lg font-semibold text-lg transition-all duration-150 
+           active:scale-95 hover:opacity-80 focus:outline-none select-none
+           flex items-center justify-center border-none;
+  }
+  
+  .btn-number {
+    @apply calc-btn bg-gray-700 text-white hover:bg-gray-600;
+  }
+  
+  .btn-operator {
+    @apply calc-btn bg-orange-500 text-white hover:bg-orange-400;
+  }
+  
+  .btn-special {
+    @apply calc-btn bg-gray-600 text-white hover:bg-gray-500;
+  }
+  
+  .btn-equals {
+    @apply calc-btn bg-orange-500 text-white hover:bg-orange-400;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: #000;
+}
