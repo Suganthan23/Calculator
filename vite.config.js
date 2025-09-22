@@ -6,5 +6,6 @@ export default defineConfig({
   base: '/Calculator/',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
   }
 })
